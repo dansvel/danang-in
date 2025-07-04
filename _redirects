@@ -1,1 +1,2 @@
-https://danang-in.pages.dev/*  https://danang.in/:splat  301!
+*.danang-in.pages.dev/*  https://danang.in/:splat  301!
+http://*.danang-in.pages.dev/*  https://danang.in/:splat  301!
