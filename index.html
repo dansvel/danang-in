@@ -1,60 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>danang.in - Coming Soon</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <style>
-    body {
-      min-height: 100vh;
-      /* Gradasi indigo ke biru muda */
-      background: linear-gradient(135deg, #4f46e5 0%, #a5b4fc 100%);
-      /* Pattern polkadot */
-      position: relative;
-      overflow: hidden;
-    }
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-image: radial-gradient(rgba(255,255,255,0.15) 2px, transparent 2.5px), radial-gradient(rgba(255,255,255,0.10) 1.5px, transparent 2.5px);
-      background-size: 40px 40px, 20px 20px;
-      background-position: 0 0, 10px 10px;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .coming-soon-container {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-    .fun-emoji {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: bounce 1.5s infinite alternate;
-    }
-    @keyframes bounce {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-20px); }
-    }
-    .subtitle {
-      color: #fbbf24;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-shadow: 1px 2px 8px rgba(79,70,229,0.15);
-    }
-  </style>
+    <script>
+        if (window.location.hostname === "danang-in.pages.dev") {
+            window.location.replace("https://danang.in" + window.location.pathname);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>danang.in - Coming Soon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            /* Gradasi indigo ke biru muda */
+            background: linear-gradient(135deg, #4f46e5 0%, #a5b4fc 100%);
+            /* Pattern polkadot */
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.15) 2px, transparent 2.5px), radial-gradient(rgba(255, 255, 255, 0.10) 1.5px, transparent 2.5px);
+            background-size: 40px 40px, 20px 20px;
+            background-position: 0 0, 10px 10px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .coming-soon-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .fun-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .subtitle {
+            color: #fbbf24;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-shadow: 1px 2px 8px rgba(79, 70, 229, 0.15);
+        }
+    </style>
 </head>
+
 <body>
-  <div class="coming-soon-container">
-    <div class="fun-emoji">🎉✨</div>
-    <h1 class="title is-2 has-text-white has-text-centered" style="text-shadow:2px 4px 16px #6366f1;">Sedang di-danang.in dulu ya...</h1>
-    <p class="subtitle is-5 has-text-centered"><b>danang.in</b></p>
-  </div>
+    <div class="coming-soon-container">
+        <div class="fun-emoji">🎉✨</div>
+        <h1 class="title is-2 has-text-white has-text-centered" style="text-shadow:2px 4px 16px #6366f1;">Sedang
+            di-danang.in dulu ya...</h1>
+        <p class="subtitle is-5 has-text-centered"><b>danang.in</b></p>
+    </div>
 </body>
-</html> 
+
+</html>
